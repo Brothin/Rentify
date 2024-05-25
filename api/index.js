@@ -94,10 +94,7 @@ app.use((err, req, res, next) => {
 //Handling CORS origin
 export const io = new Server(expressServer, {
   cors: {
-    origin: [
-      "http://localhost:5173",
-      "https://rentify-client-swart.vercel.app/",
-    ],
+    origin: ["http://localhost:5173", "https://rentify-client-two.vercel.app/"],
     credentials: true,
   },
 });
